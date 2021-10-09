@@ -11,18 +11,24 @@ class Pages extends BaseController
             'tes' => ['satu', 'dua', 'tiga']
         ];
 
-        echo view('layout/header' , $data);
-        echo view('pages/home');
-        echo view('layout/footer');
+        return view('pages/home' , $data);
     }
+
     public function about()
     {
         $data = [
             'tittle' => 'About Me | Derry Davinci'
         ];
 
-        echo view('layout/header' , $data);
-        echo view('pages/about');
-        echo view('layout/footer');
+        return view('pages/about', $data);
+    }
+
+    public function contact()
+    {
+        $data =[
+            'tittle' => 'Contact Me | Derry Davinci'
+        ];
+
+        return view ('pages/contact', $data);
     }
 }
