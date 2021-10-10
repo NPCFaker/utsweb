@@ -6,11 +6,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="navbar-brand" href="#"><b>Derry Davinci</b></a>
+                    <a class="navbar-brand"><b>Derry Davinci</b></a>
                     <a class="nav-link active" aria-current="page" href="<?= base_url('/'); ?>">Home</a>
                     <a class="nav-link" href="<?= base_url('/pages/about'); ?>">About</a>
-                    <a class="nav-link" href="<?= base_url('/pages/contact'); ?>">Contact</a>
-                    <a class="nav-link" href="<?= base_url('/pages/contact'); ?>">Contact</a>
+                    <!-- <a class="nav-link" href="<?= base_url('/pages/contact'); ?>">Contact</a> -->
+                    <a class="nav-link" href="<?= base_url('/mahasiswa'); ?>">Mahasiswa</a>
+                    <a class="nav-link" href="<?= base_url('/dosen'); ?>">Dosen</a>
+                    <a class="nav-link" href="<?= base_url('/matkul'); ?>">Mata Kuliah</a>
                 </div>
             </div>
         </div>
