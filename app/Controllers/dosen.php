@@ -13,13 +13,18 @@ class Dosen extends BaseController
     }
     public function index()
     {
-        $dosen = $this->ModelDosen->findAll();
+        // $dosen = $this->ModelDosen->findAll();
 
         $data = [
             'tittle' => 'Daftar Dosen',
-            'dosen' => $dosen
+            'dosen' => $this->ModelDosen->getDosen()
         ];
 
         return view('dosen/index', $data);
+    }
+    public function detail($nidn)
+    {
+        $dosen = $this->ModelDosen->getDosen($nidn);
+        dd($dosen);
     }
 }

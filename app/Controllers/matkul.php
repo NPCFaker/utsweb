@@ -13,13 +13,19 @@ class Matkul extends BaseController
     }
     public function index()
     {
-        $matkul = $this->ModelMatkul->findAll();
+        // $matkul = $this->ModelMatkul->findAll();
 
         $data = [
             'tittle' => 'Daftar Matkul',
-            'matkul' => $matkul
+            'matkul' => $this->ModelMatkul->getMatkul()
         ];
 
         return view('matkul/index', $data);
+    }
+
+    public function detail($kode_mk)
+    {
+        $matkul = $this->ModelMatkul->getMatkul($kode_mk);
+        dd($matkul);
     }
 }

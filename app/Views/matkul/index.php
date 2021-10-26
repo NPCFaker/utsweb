@@ -14,6 +14,8 @@
                         <th scope="col">Nama Mata Kuliah</th>
                         <th scope="col">Semester</th>
                         <th scope="col">SKS</th>
+                        <th scope="col">Aksi</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -27,6 +29,10 @@
                             <td><?= $mk['nm_mk'] ?></td>
                             <td><?= $mk['sem'] ?></td>
                             <td><?= $mk['sks'] ?></td>
+                            <td>
+                                <a href="/matkul/<?= $mk['kode_mk']; ?>" class="btn btn-success">Detail</a>
+
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

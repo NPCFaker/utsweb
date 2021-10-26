@@ -13,13 +13,24 @@ class Mahasiswa extends BaseController
     }
     public function index ()
     {
-        $mhs = $this->ModelMahasiswa->findAll();
+        // $mhs = $this->ModelMahasiswa->findAll();
         
         $data = [
             'tittle' => 'Daftar Mahasiswa',
-            'mhs' => $mhs
+            'mhs' => $this->ModelMahasiswa->getMahasiswa()
         ];
 
         return view ('mahasiswa/index', $data);
     }
+
+    public function detail($nim)
+    {
+        $data = [
+            'title' => 'Detail Mahasiswa',
+            'mahasiswa' => $this->ModelMahasiswa->getMahasiswa($nim)
+        ];
+
+        return view('komik/detail', $data);
+    }
+
 }

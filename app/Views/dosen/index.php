@@ -15,6 +15,7 @@
                         <th scope="col">JK</th>
                         <th scope="col">Alamat</th>
                         <th scope="col">Telp</th>
+                        <th scope="col">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,6 +30,9 @@
                             <td><?= $d['jk'] ?></td>
                             <td><?= $d['alamat'] ?></td>
                             <td><?= $d['telp_dosen'] ?></td>
+                            <td>
+                                <a href="/dosen/<?= $d['nidn']; ?>" class="btn btn-success">Detail</a>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

@@ -33,6 +33,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'pages::index');
 
+$routes->get('/mahasiswa/(:segment)', 'Mahasiswa::detail/$1');
+$routes->get('/dosen/(:segment)', 'Dosen::detail/$1');
+$routes->get('/matkul/(:segment)', 'Matkul::detail/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
