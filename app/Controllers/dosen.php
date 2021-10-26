@@ -22,9 +22,14 @@ class Dosen extends BaseController
 
         return view('dosen/index', $data);
     }
+
     public function detail($nidn)
     {
-        $dosen = $this->ModelDosen->getDosen($nidn);
-        dd($dosen);
+        $data = [
+            'tittle' => 'Detail Dosen',
+            'dosen' => $this->ModelDosen->getDosen($nidn)
+        ];
+
+        return view('dosen/detail', $data);
     }
 }

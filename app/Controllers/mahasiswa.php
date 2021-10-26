@@ -26,11 +26,11 @@ class Mahasiswa extends BaseController
     public function detail($nim)
     {
         $data = [
-            'title' => 'Detail Mahasiswa',
+            'tittle' => 'Detail Mahasiswa',
             'mahasiswa' => $this->ModelMahasiswa->getMahasiswa($nim)
         ];
 
-        return view('komik/detail', $data);
+        return view('mahasiswa/detail', $data);
     }
 
 }

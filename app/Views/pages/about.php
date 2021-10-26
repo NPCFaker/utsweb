@@ -7,6 +7,7 @@
             <h1>BIODATA DIRI</h1>
             <font size="5">
                 <table width="60%">
+                    <pre>
                     <tr>
                         <td>Nama</td>
                         <td>:</td>
@@ -42,6 +43,7 @@
                         <td>:</td>
                         <td>Membaca</td>
                     </tr>
+                    </pre>
                 </table>
                 </body>
         </div>

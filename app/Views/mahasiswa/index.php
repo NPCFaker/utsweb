@@ -13,7 +13,7 @@
                         <th scope="col">NIM</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Alamat</th>
-                        <th scope="col">JK</th>
+                        <th scope="col">Jenis Kelamin</th>
                         <th scope="col">Tanggal Lahir</th>
                         <th scope="col">Telp</th>
                         <th scope="col">Aksi</th>

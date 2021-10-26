@@ -25,7 +25,11 @@ class Matkul extends BaseController
 
     public function detail($kode_mk)
     {
-        $matkul = $this->ModelMatkul->getMatkul($kode_mk);
-        dd($matkul);
+        $data = [
+            'tittle' => 'Detail Mahasiswa',
+            'matkul' => $this->ModelMatkul->getMatkul($kode_mk)
+        ];
+
+        return view('matkul/detail', $data);
     }
 }
